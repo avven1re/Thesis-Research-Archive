@@ -9,16 +9,24 @@ A project that compares several classification methods under Liu's Framework and
 Thesis-Research-Archive
 ├── README.md
 ├── Requirements.md
-├── Liu's_Framework
-│   ├── Data
-│   │   ├── file1.txt
-│   │   └── file2.txt
-│   └── scr
-│       └── file3.txt
-└── Liu's_Framework&DoublyRobust
-    ├── Data
-    |   ├── 
-    |   ├── 
+├── 📁Liu's_Framework
+│   ├── 📁Data
+│   │   ├── DataGeneration.jl
+│   │   └── README.txt
+│   └── 📁scr
+│   │   └── 📁functions
+│   │   └── Restructured_LiuFramework.jl
+│   │   └── [Example Code]Restructured_LiuFramework.R
+|   └──📁output
+└── 📁Liu's_Framework&DoublyRobust
+|   ├── 📁Data
+|   |   ├── DataGeneration.jl
+|   |   └── README.txt
+│   └── 📁scr
+│   │   └── 📁functions
+│   │   └── DoublyRobust.jl
+│   │   └── [Example Code]Doubly Robust.R
+|   └──📁output
 ```
 `Requirements.md` contains the information of software and packages of use.
 And there are two simulation study in two separate folders:
@@ -45,7 +53,12 @@ Each data were conducted under two different programming languages:
 - the Simulated data: `Julia`
 - DOKR data: `R`
 
-Due to DOKR data not being publicly available, the code for the simulation study and the outputs from this dataset are provided. It is not reproducible unless you have access to the DOKR data. On the other hand, 
+Due to the DOKR data not being publicly available, only the example code for the simulation study from this dataset is provided (`[Example Code] .R`). It is not reproducible unless you have access to the DOKR data, and the output files are not extractable from the CBS environment.
+
+In each **scr** folder, you will find a **functions** folder, a `[Example Code] .R` file, and a `.jl` file. The `.jl` file includes the data generation (simulated data) and the whole simulation study process by calling functions in **functions** folder and the **Data** folder. Please check the `Requirements.md` to set up the Julia environment first, and then you are able to reproduce the two simulation study of simulated data by simply executing the `.jl` file in **scr** folder (`Restructured_LiuFramework.jl` and `DoublyRobust.jl`). The results will be stored as `.csv` in the **output** folder.
+
+All simulation processes are seeded.
+
 
 
 
