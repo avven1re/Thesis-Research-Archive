@@ -16,15 +16,11 @@ Thesis-Research-Archive
 │   └── scr
 │       └── file3.txt
 └── Liu's_Framework&DoublyRobust
-    ├── file4.txt
+    ├── Data
+    |   ├── 
+    |   ├── 
 ```
-
-There are two datasets in this project: 
-
-- Simulated data,
-- the registered data of Dutch Online Kilometer Registration (DOKR data).
-
-Note that *only* the simulated data is available publicly in this research archive.
+`Requirements.md` contains the information of software and packages of use.
 And there are two simulation study in two separate folders:
 
  - Liu's_Framework,
@@ -35,6 +31,22 @@ In each folder of simulation study, there are three folders including:
  - **Data**: Contains the file of generating function for the simulated data and a information file for the DOKR data.
  - **scr**: Contains the source code of the simulation study.
  - **output**: Contains the outputs.
+
+ There are two datasets in this project: 
+
+- Simulated data,
+- the registered data of Dutch Online Kilometer Registration (DOKR data).
+
+Note that *only* the simulated data is available publicly in this research archive. For more information to access the datasets, please check the **Data** folder in each simulation study.
+
+## A Guide of using the files in **scr** folder:
+Each data were conducted under two different programming languages:
+
+- the Simulated data: `Julia`
+- DOKR data: `R`
+
+Due to DOKR data not being publicly available, the code for the simulation study and the outputs from this dataset are provided. It is not reproducible unless you have access to the DOKR data. On the other hand, 
+
 
 
 
