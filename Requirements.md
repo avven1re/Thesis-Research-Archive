@@ -1,4 +1,9 @@
 ## Simulated data - `Julia v1.10.2`
+To install Julia, please visit: https://julialang.org/downloads/
+
+Package Management: https://pkgdocs.julialang.org/v1/managing-packages/
+
+The usage of RCall.jl can be found on: https://juliainterop.github.io/RCall.jl/stable/
 ### Packages of use:
 - [336ed68f] CSV v0.10.12
 - [a93c6f00] DataFrames v1.6.1

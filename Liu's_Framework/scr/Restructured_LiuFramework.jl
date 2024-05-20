@@ -350,19 +350,6 @@ Restructured_Liu_framework = function (P::Vector, NP::Vector, data::DataFrame, F
 end
 
 ff = @formula(y ~ x1 + x2 + x3 + x4 + x5 + x6 + x7 + x8 + x9 + x10 + x11 + x12 + x13 + x14 + x15)
-lmodel = lm(ff, df)
-r2(lmodel)
-f2 = @formula(y ~ x11 + x3 + x5 + x7 + x9)
-lmodel2 = lm(f2, df)
-r2(lmodel2)
-
-f3 = @formula(y ~  x1 + x11 + x9 + x3 + x5)
-lmodel3 = lm(f3, df)
-r2(lmodel3)
-
-f3 = @formula(y ~  x1 + x7 + x11 + x5 + x9 )
-lmodel3 = lm(f3, df)
-r2(lmodel3)
 
 # Results of Logistic model, Naive Bayes in f_P = [0.01, 0.1], f_NP = [0.05, 0.3]
 res1, rep_y = Restructured_Liu_framework([0.01, 0.1], [0.05], df, ff; Nreplication = 500, seed = 1234, Logistic = true, NB = true)

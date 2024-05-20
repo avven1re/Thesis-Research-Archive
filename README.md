@@ -63,4 +63,9 @@ All simulation processes are seeded.
 ## Permission and Access
 This research archive is available on [Github](https://github.com/avven1re/Thesis-Research-Archive) only with the simulation study conducting under the simulated data.
 
+## Contact Information
+For inquiries or access requests, please contact:
 
+Min-Wen Yang
+
+mwyang326@gmail.com
