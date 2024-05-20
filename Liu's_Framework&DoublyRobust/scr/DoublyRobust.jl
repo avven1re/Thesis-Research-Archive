@@ -2,7 +2,6 @@
 using CSV, Statistics, DataFrames, DelimitedFiles, RDatasets, ProgressBars, GLM, StatsModels, Fetch, RCall, LIBSVM
 using Distributions, Roots# like uniroot in R
 using Tables, ThreadSafeDicts, ProgressMeter, Random, XGBoost, DecisionTree, Plots
-import MLJ#, MLJNaiveBayesInterface
 import NaiveBayes
 
 

@@ -270,10 +270,10 @@ Restructured_Liu_Framework_DR <- function(P, NP, data, Nreplication = 500, seed 
 }
 
 res_DR1 <- Restructured_Liu_Framework_DR(P = c(0.01, 0.1), NP = c(0.05), Nreplication = 500, data = pop, Logistic = T, NB = T, BART = T, DR_LM = T)
-write.xlsx(res_DR1$Classification_result, file = "Liu's_Framework\\output\\result_DR1.xlsx", rowNames = F)
+write.xlsx(res_DR1$Classification_result, file = "Liu's_Framework&DoublyRobust\\output\\result_DR1.xlsx", rowNames = F)
 
 res_DR2 <- Restructured_Liu_Framework_DR(P = c(0.01, 0.1), NP = c(0.3), Nreplication = 500, data = pop, Logistic = T, NB = T, BART = T, DR_LM = T)
-write.xlsx(res_DR2$Classification_result, file = "Liu's_Framework\\output\\result_DR2.xlsx", rowNames = F)
+write.xlsx(res_DR2$Classification_result, file = "Liu's_Framework&DoublyRobust\\output\\result_DR2.xlsx", rowNames = F)
 
 res_DR3 <- Restructured_Liu_Framework_DR(P = c(0.01, 0.1), NP = c(0.5), Nreplication = 500, data = pop, Logistic = T, NB = T, BART = T, DR_LM = T)
-write.xlsx(res_DR3$Classification_result, file = "Liu's_Framework\\output\\result_DR3.xlsx", rowNames = F)
+write.xlsx(res_DR3$Classification_result, file = "Liu's_Framework&DoublyRobust\\output\\result_DR3.xlsx", rowNames = F)
